@@ -25,7 +25,7 @@ if button:
     df = pd.DataFrame(data,columns=["Movie Names","Release Year","Rank"])
     st.dataframe(df)
 
-    csv_data = df.to_csv(index=False).encode("utf-8")
+    csv_data = df.to_csv(index = False).encode("utf-8")
 
     # TO include a download button
     st.download_button(
